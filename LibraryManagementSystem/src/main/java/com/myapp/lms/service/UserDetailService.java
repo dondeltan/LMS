@@ -28,7 +28,7 @@ public class UserDetailService  implements UserDetailsService{
 	}
 	private Collection<GrantedAuthority> getGrantedAuthorizedUser(User user) {
 		Collection<GrantedAuthority> grantedAuthority = new ArrayList<GrantedAuthority>();
-		if(user.getRole().equals("admin")) {
+		if(user.getRole().getName().equals("admin")) {
 			grantedAuthority.add(new SimpleGrantedAuthority("ROLE_ADMIN"));
 		}
 		grantedAuthority.add(new SimpleGrantedAuthority("ROLE_USER"));

@@ -4,10 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.myapp.lms.model.Book;
 import com.myapp.lms.repository.BookRepository;
 
+@Service
 public class BookService {
 	
 

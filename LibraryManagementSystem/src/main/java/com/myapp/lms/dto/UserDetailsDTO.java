@@ -1,16 +1,16 @@
 package com.myapp.lms.dto;
 
-public class UserDetails {
+public class UserDetailsDTO {
 	
 	private String userName;
 	private String password;
 	private String role;
 	
-	public UserDetails() {
+	public UserDetailsDTO() {
 		
 	}
 	
-	public UserDetails(String userName, String password, String role) {
+	public UserDetailsDTO(String userName, String password, String role) {
 		super();
 		this.userName = userName;
 		this.password = password;
@@ -33,7 +33,7 @@ public class UserDetails {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		UserDetails other = (UserDetails) obj;
+		UserDetailsDTO other = (UserDetailsDTO) obj;
 		if (password == null) {
 			if (other.password != null)
 				return false;

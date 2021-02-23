@@ -1,6 +1,6 @@
 package com.myapp.lms.dto;
 
-public class LoginVO {
+public class LoginVO implements Cloneable{
 
 	private String authenticatedString;
 	
