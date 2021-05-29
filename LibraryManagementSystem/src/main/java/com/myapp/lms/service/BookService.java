@@ -23,6 +23,7 @@ public class BookService {
 	}
 
 	public Book updateBooks(Book book) {
+		System.out.println("bookkk ========" + book );
 		Book oldBook = bookRepository.findById(book.getBookID()).orElse(null);
 		Book updatedBook = null;
 		if(null!=oldBook) {
